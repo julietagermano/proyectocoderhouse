@@ -74,14 +74,24 @@ body {
 .videoVeganismo {
   text-align: center;
 }
-.inicio__tabla--p {
+.inicioParrafo {
   font-family: "Montserrat";
-  font-size: 19px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #008c6e;
+  text-align: center;
+}
+.hr {
+  border: 10px solid black;
+}
+.inicio__tabla--p {
+  font-family: "Segoe UI";
+  font-size: 20px;
   color: white;
   text-align: center;
 }
 .inicio__tabla {
-  border: 1px white solid;
+  border: 2px white solid;
   background-color: black;
   text-align: center;
   margin-left: auto;
@@ -92,13 +102,13 @@ body {
     color: white;
   }
   td {
-    font-family: "Montserrat";
+    font-family: "Segoe UI";
     background-color: black;
-    border: 1px white solid;
+    border: 2px white solid;
     color: white;
   }
   th {
-    border: 1px white solid;
+    border: 2px white solid;
   }
 }
 /* Conferencias */
