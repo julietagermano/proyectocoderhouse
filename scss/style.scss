@@ -10,7 +10,31 @@
   margin-inline-end: 0px;
   font-weight: bold;
 }
-
+@mixin pVideosConferencias {
+  display: inline-block;
+  padding-top: 0px;
+  padding-left: 36px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: white;
+  width: 50%;
+  align-self: center;
+}
+@mixin preguntasFrecuentes {
+  float: bottom;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #032b22;
+  color: white;
+  border: 1px solid white;
+  font-family: "Segoe UI";
+  text-align: center;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
 @mixin botonFormulario {
   text-align: center;
   font-family: "Segoe UI";
@@ -18,7 +42,23 @@
   margin: 5px;
   background-color: #008c6e;
 }
-
+@mixin footerP {
+  font-size: 15px;
+  text-align: center;
+  font-family: "Segoe UI";
+  color: white;
+}
+@mixin organizaciones {
+  background-color: #08352b;
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
 /*Body */
 body {
   background-color: #141414;
@@ -135,37 +175,30 @@ body {
     display: flex;
     margin-left: 10px;
     margin-right: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 1.6vw;
   }
   .videoEd {
+    display: inline-block;
     padding-right: 20px;
+    width: 50%;
   }
   .pEd {
-    padding-top: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-    font-size: 15px;
-    font-family: "Montserrat";
-    color: white;
+    @include pVideosConferencias;
   }
   .divVideoGaryF {
     display: flex;
+    margin-top: 0;
     margin-left: 10px;
     margin-right: 5px;
     margin-bottom: 20px;
   }
   .videoGaryF {
-    width: 50%;
+    display: inline-block;
+    padding-right: 20px;
+    width: 70%;
   }
   .pGaryF {
-    padding-top: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-    font-size: 15px;
-    font-family: "Montserrat";
-    color: white;
+    @include pVideosConferencias;
   }
   .gifAd {
     width: 30%;
@@ -212,37 +245,13 @@ body {
     text-decoration: none;
   }
   #organizaciones {
-    background-color: #08352b;
-    border: 2px solid white;
-    padding: 10px;
-    font-size: 17px;
-    letter-spacing: 1px;
-    font-family: "Montserrat";
-    font-weight: bold;
-    text-align: center;
-    color: white;
+    @include organizaciones;
   }
   #zona {
-    background-color: #08352b;
-    border: 2px solid white;
-    padding: 10px;
-    font-size: 17px;
-    letter-spacing: 1px;
-    font-family: "Montserrat";
-    font-weight: bold;
-    text-align: center;
-    color: white;
+    @include organizaciones;
   }
   #redesSociales {
-    background-color: #08352b;
-    border: 2px solid white;
-    padding: 10px;
-    font-size: 17px;
-    letter-spacing: 1px;
-    font-family: "Montserrat";
-    font-weight: bold;
-    text-align: center;
-    color: white;
+    @include organizaciones;
   }
 }
 
@@ -274,47 +283,14 @@ body {
   margin: auto;
 }
 .Pregunta {
-  float: bottom;
-  padding: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  background-color: #032b22;
-  color: white;
-  border: 1px solid white;
-  font-family: "Segoe UI";
-  text-align: center;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  @include preguntasFrecuentes;
 }
 .Pregunta1 {
-  float: bottom;
-  padding: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  background-color: #032b22;
-  color: white;
-  border: 1px solid white;
-  font-family: "Segoe UI";
-  text-align: center;
-  border-left: none;
-  border-right: none;
+  @include preguntasFrecuentes;
   border-top: none;
-  border-bottom: none;
 }
 .Pregunta10 {
-  float: bottom;
-  padding: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  background-color: #032b22;
-  color: white;
-  border: 1px solid white;
-  font-family: "Segoe UI";
-  text-align: center;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  @include preguntasFrecuentes;
 }
 /* Formulario de Contacto */
 .formulario {
@@ -353,25 +329,17 @@ footer {
   margin-block-end: 0;
 }
 .footer__p {
-  font-size: 15px;
-  text-align: center;
-  font-family: "Segoe UI";
-  color: white;
+  @include footerP;
 }
 .footer__p--activismos {
-  font-size: 15px;
-  text-align: center;
-  font-family: "Segoe UI";
-  color: white;
+  @include footerP;
   margin-top: 1rem;
 }
 .footer__p--contacto {
-  font-size: 15px;
-  text-align: center;
-  font-family: "Segoe UI";
-  color: white;
+  @include footerP;
   margin-top: 1rem;
 }
+/* Responsive */
 @media (max-width: 736px) {
   .header__div {
     width: 100%;

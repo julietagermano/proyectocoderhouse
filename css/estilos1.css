@@ -113,32 +113,41 @@ body {
     display: flex;
     margin-left: 10px;
     margin-right: 5px;
-    margin-bottom: 20px; }
+    margin-bottom: 1.6vw; }
   .divMayor .videoEd {
-    padding-right: 20px; }
-  .divMayor .pEd {
-    padding-top: 70px;
-    padding-left: 20px;
+    display: inline-block;
     padding-right: 20px;
-    padding-bottom: 50px;
+    width: 50%; }
+  .divMayor .pEd {
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 36px;
+    padding-right: 20px;
     font-size: 15px;
     font-family: "Montserrat";
-    color: white; }
+    color: white;
+    width: 50%;
+    align-self: center; }
   .divMayor .divVideoGaryF {
     display: flex;
+    margin-top: 0;
     margin-left: 10px;
     margin-right: 5px;
     margin-bottom: 20px; }
   .divMayor .videoGaryF {
-    width: 50%; }
-  .divMayor .pGaryF {
-    padding-top: 70px;
-    padding-left: 20px;
+    display: inline-block;
     padding-right: 20px;
-    padding-bottom: 50px;
+    width: 70%; }
+  .divMayor .pGaryF {
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 36px;
+    padding-right: 20px;
     font-size: 15px;
     font-family: "Montserrat";
-    color: white; }
+    color: white;
+    width: 50%;
+    align-self: center; }
   .divMayor .gifAd {
     width: 30%;
     margin-right: 10px; }
@@ -258,8 +267,8 @@ body {
   text-align: center;
   border-left: none;
   border-right: none;
-  border-top: none;
-  border-bottom: none; }
+  border-bottom: none;
+  border-top: none; }
 
 .Pregunta10 {
   float: bottom;
@@ -331,6 +340,7 @@ footer {
   color: white;
   margin-top: 1rem; }
 
+/* Responsive */
 @media (max-width: 736px) {
   .header__div {
     width: 100%; }
