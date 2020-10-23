@@ -100,8 +100,8 @@ body {
   margin-bottom: 40px; }
   .divGaryY .GaryY {
     text-align: center;
-    font-size: 15px;
-    font-family: "Montserrat";
+    font-size: 16px;
+    font-family: "Segoe UI";
     color: white; }
 
 .divMayor {
@@ -123,8 +123,8 @@ body {
     padding-top: 0px;
     padding-left: 36px;
     padding-right: 20px;
-    font-size: 15px;
-    font-family: "Montserrat";
+    font-size: 16px;
+    font-family: "Segoe UI";
     color: white;
     width: 50%;
     align-self: center; }
@@ -143,8 +143,8 @@ body {
     padding-top: 0px;
     padding-left: 36px;
     padding-right: 20px;
-    font-size: 15px;
-    font-family: "Montserrat";
+    font-size: 16px;
+    font-family: "Segoe UI";
     color: white;
     width: 50%;
     align-self: center; }
@@ -157,14 +157,12 @@ body {
   width: 60%;
   margin: auto; }
   #carousel .hCarousel {
-    font-family: "Montserrat";
-    font-size: 23px;
-    font-weight: bold;
+    font-family: "Segoe UI";
+    font-size: 24px;
     color: white; }
   #carousel .pCarousel {
-    font-family: "Montserrat";
-    font-size: 19px;
-    font-weight: bold;
+    font-family: "Segoe UI";
+    font-size: 20px;
     color: white; }
 
 .grid-container {
@@ -179,8 +177,8 @@ body {
     background-color: #08352b;
     border: 2px solid white;
     padding: 20px;
-    font-size: 15px;
-    font-family: "Montserrat";
+    font-size: 16px;
+    font-family: "Segoe UI";
     text-align: center;
     color: white; }
   .grid-container a {
