@@ -367,37 +367,37 @@ footer {
   .conferenciasVideoGaryY {
     width: 90%;
     height: 260px; }
-  .divGaryY {
-    width: 90%;
-    margin: auto; }
-  .GaryY {
-    font-size: 3vw !important; }
+    .conferenciasVideoGaryY .divGaryY {
+      width: 90%;
+      margin: auto; }
+    .conferenciasVideoGaryY .GaryY {
+      font-size: 3vw !important; }
   .divVideoEd {
     display: block !important;
     width: 120%; }
-  .videoEd {
-    width: 70% !important;
-    height: 34vw !important; }
-  .pEd {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    width: 70% !important;
-    margin: auto !important;
-    font-size: 2.5vw !important;
-    text-align: center; }
+    .divVideoEd .videoEd {
+      width: 70% !important;
+      height: 34vw !important; }
+    .divVideoEd .pEd {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 70% !important;
+      margin: auto !important;
+      font-size: 2.5vw !important;
+      text-align: center; }
   .divVideoGaryF {
     display: block !important;
     width: 120%; }
-  .VideoGaryF {
-    width: 70% !important;
-    height: 34vw !important; }
-  .pGaryF {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    width: 70% !important;
-    margin: auto !important;
-    font-size: 2.5vw !important;
-    text-align: center; }
+    .divVideoGaryF .VideoGaryF {
+      width: 70% !important;
+      height: 34vw !important; }
+    .divVideoGaryF .pGaryF {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 70% !important;
+      margin: auto !important;
+      font-size: 2.5vw !important;
+      text-align: center; }
   .gifAd {
     width: 370% !important; }
   .grid-container {
@@ -405,7 +405,7 @@ footer {
     margin: auto !important; }
   .grid-item {
     padding: 2px !important;
-    font-size: 9.5px !important; }
+    font-size: 8.5px !important; }
   .body__titulo--contacto {
     font-size: 18px;
     width: 100%; }

@@ -80,15 +80,6 @@ body {
   display: flex;
   justify-content: space-between;
 
-  .header__div--ul {
-    // padding-left: 40rem;
-  }
-  .header__div--ulActivismos {
-    // padding-left: 40rem;
-  }
-  .header__div--ulContacto {
-    // padding-left: 40rem;
-  }
   .header__ul {
     list-style-type: none;
     display: flex;
@@ -175,42 +166,42 @@ body {
 
   .divVideosEdYGaryF {
     flex-direction: column;
-  
-  .divVideoEd {
-    display: flex;
-    margin-left: 10px;
-    margin-right: 5px;
-    margin-bottom: 1.6vw;
-  
-  .videoEd {
-    display: inline-block;
-    width: 40%;
-    height: 20vw;  
+
+    .divVideoEd {
+      display: flex;
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-bottom: 1.6vw;
+
+      .videoEd {
+        display: inline-block;
+        width: 40%;
+        height: 20vw;
+      }
+      .pEd {
+        @include pVideosConferencias;
+      }
+    }
+    .divVideoGaryF {
+      display: flex;
+      margin-top: 0;
+      margin-left: 10px;
+      margin-right: 5px;
+
+      .VideoGaryF {
+        display: inline-block;
+        width: 40%;
+        height: 20vw;
+      }
+      .pGaryF {
+        @include pVideosConferencias;
+      }
+    }
   }
-  .pEd {
-    @include pVideosConferencias;
-  }
-}
-  .divVideoGaryF {
-    display: flex;
-    margin-top: 0;
-    margin-left: 10px;
-    margin-right: 5px;
- 
-  .VideoGaryF {
-    display: inline-block;
-    width: 40%;
-    height: 20vw;  
-  }
-  .pGaryF {
-    @include pVideosConferencias;
-  }
-}
-}
   .gifAd {
     width: 80%;
     margin-right: 10px;
-    height: inherit;  
+    height: inherit;
   }
 }
 
@@ -351,16 +342,15 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-
-  .header__ul{
+  .header__ul {
     display: block !important ;
     text-align: end;
     line-height: 6vw;
     padding-top: 0 !important;
     margin-block-start: 1em !important;
     margin-block-end: 1em !important;
-    }
-  
+  }
+
   .header__div--ulContacto {
     width: 100%;
   }
@@ -373,93 +363,90 @@ footer {
     margin-top: 10px;
   }
 
-  .header__li--activismos{
+  .header__li--activismos {
     margin-top: 0 !important;
   }
 
-  .header__li--contacto{
+  .header__li--contacto {
     margin-top: 0 !important;
   }
 
-  .videoVeganismo{
-  margin-top: 8vw;
-  margin-bottom: 12vw;
+  .videoVeganismo {
+    margin-top: 8vw;
+    margin-bottom: 12vw;
   }
 
-  .videoHome{
-  width:90%;
-  height: auto;
+  .videoHome {
+    width: 90%;
+    height: auto;
   }
 
-  .inicio__tabla{
+  .inicio__tabla {
     font-size: 3vw;
   }
 
-  .conferenciasVideoGaryY{
+  .conferenciasVideoGaryY {
     width: 90%;
     height: 260px;
-  }
 
-  .divGaryY{
-    width: 90%;
-    margin: auto;
-  }
+    .divGaryY {
+      width: 90%;
+      margin: auto;
+    }
 
-  .GaryY{
-    font-size: 3vw !important;
+    .GaryY {
+      font-size: 3vw !important;
+    }
   }
-
-  .divVideoEd{
+  .divVideoEd {
     display: block !important;
     width: 120%;
+
+    .videoEd {
+      width: 70% !important;
+      height: 34vw !important;
+    }
+
+    .pEd {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 70% !important;
+      margin: auto !important;
+      font-size: 2.5vw !important;
+      text-align: center;
+    }
   }
-  
-  .videoEd{
-    width: 70% !important;
-    height: 34vw !important;
-}
-
-.pEd{
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 70% !important;
-  margin: auto !important;
-  font-size: 2.5vw !important;
-  text-align: center;
-}
-
-  .divVideoGaryF{
+  .divVideoGaryF {
     display: block !important;
     width: 120%;
+
+    .VideoGaryF {
+      width: 70% !important;
+      height: 34vw !important;
+    }
+
+    .pGaryF {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 70% !important;
+      margin: auto !important;
+      font-size: 2.5vw !important;
+      text-align: center;
+    }
+  }
+  .gifAd {
+    width: 370% !important;
   }
 
-  .VideoGaryF{
-    width: 70% !important;
-    height: 34vw !important;
-}
+  .grid-container {
+    width: 95% !important;
+    margin: auto !important;
+  }
 
-.pGaryF{
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 70% !important;
-  margin: auto !important;
-  font-size: 2.5vw !important;
-  text-align: center;
-}
-
-.gifAd{
-  width: 370% !important;
-}
-
-.grid-container{
-  width: 95% !important;
-  margin: auto !important;
-}
-
-.grid-item{
-  padding: 2px !important;
-  font-size: 9.5px !important;
-}
+  .grid-item {
+    padding: 2px !important;
+    font-size: 8.5px !important;
+  }
 
   .body__titulo--contacto {
     font-size: 18px;
@@ -470,7 +457,7 @@ footer {
     padding: auto;
   }
   .contenedorInputContacto {
-    display:inline-grid;
+    display: inline-grid;
   }
   select {
     width: 100%;
@@ -485,4 +472,3 @@ footer {
     width: 100%;
   }
 }
-
