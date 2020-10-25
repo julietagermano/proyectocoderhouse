@@ -367,10 +367,10 @@ footer {
   .conferenciasVideoGaryY {
     width: 90%;
     height: 260px; }
-    .conferenciasVideoGaryY .divGaryY {
-      width: 90%;
-      margin: auto; }
-    .conferenciasVideoGaryY .GaryY {
+  .divGaryY {
+    width: 90%;
+    margin: auto; }
+    .divGaryY .GaryY {
       font-size: 3vw !important; }
   .divVideoEd {
     display: block !important;
