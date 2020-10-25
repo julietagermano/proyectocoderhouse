@@ -31,13 +31,8 @@ body {
 .header__div {
   background-image: linear-gradient(to bottom, #008c6e, #141414);
   padding-bottom: 20px;
-  display: flex; }
-  .header__div .header__div--ul {
-    padding-left: 40rem; }
-  .header__div .header__div--ulActivismos {
-    padding-left: 40rem; }
-  .header__div .header__div--ulContacto {
-    padding-left: 40rem; }
+  display: flex;
+  justify-content: space-between; }
   .header__div .header__ul {
     list-style-type: none;
     display: flex;
@@ -65,7 +60,8 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #008c6e;
-  text-align: center; }
+  text-align: center;
+  margin: 0 2vw 0 2vw; }
 
 .hr {
   border: 10px solid black; }
@@ -74,7 +70,9 @@ body {
   font-family: "Segoe UI";
   font-size: 20px;
   color: white;
-  text-align: center; }
+  text-align: center;
+  width: 90%;
+  margin: auto; }
 
 .inicio__tabla {
   border: 2px white solid;
@@ -100,7 +98,7 @@ body {
   margin-bottom: 40px; }
   .divGaryY .GaryY {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-family: "Segoe UI";
     color: white; }
 
@@ -109,48 +107,48 @@ body {
   display: flex; }
   .divMayor .divVideosEdYGaryF {
     flex-direction: column; }
-  .divMayor .divVideoEd {
-    display: flex;
-    margin-left: 10px;
-    margin-right: 5px;
-    margin-bottom: 1.6vw; }
-  .divMayor .videoEd {
-    display: inline-block;
-    padding-right: 20px;
-    width: 50%; }
-  .divMayor .pEd {
-    display: inline-block;
-    padding-top: 0px;
-    padding-left: 36px;
-    padding-right: 20px;
-    font-size: 16px;
-    font-family: "Segoe UI";
-    color: white;
-    width: 50%;
-    align-self: center; }
-  .divMayor .divVideoGaryF {
-    display: flex;
-    margin-top: 0;
-    margin-left: 10px;
-    margin-right: 5px;
-    margin-bottom: 20px; }
-  .divMayor .videoGaryF {
-    display: inline-block;
-    padding-right: 20px;
-    width: 70%; }
-  .divMayor .pGaryF {
-    display: inline-block;
-    padding-top: 0px;
-    padding-left: 36px;
-    padding-right: 20px;
-    font-size: 16px;
-    font-family: "Segoe UI";
-    color: white;
-    width: 50%;
-    align-self: center; }
+    .divMayor .divVideosEdYGaryF .divVideoEd {
+      display: flex;
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-bottom: 1.6vw; }
+      .divMayor .divVideosEdYGaryF .divVideoEd .videoEd {
+        display: inline-block;
+        width: 40%;
+        height: 20vw; }
+      .divMayor .divVideosEdYGaryF .divVideoEd .pEd {
+        display: inline-block;
+        padding-top: 0px;
+        padding-left: 36px;
+        padding-right: 20px;
+        font-size: 1.2vw;
+        font-family: "Segoe UI";
+        color: white;
+        width: 50%;
+        align-self: center; }
+    .divMayor .divVideosEdYGaryF .divVideoGaryF {
+      display: flex;
+      margin-top: 0;
+      margin-left: 10px;
+      margin-right: 5px; }
+      .divMayor .divVideosEdYGaryF .divVideoGaryF .VideoGaryF {
+        display: inline-block;
+        width: 40%;
+        height: 20vw; }
+      .divMayor .divVideosEdYGaryF .divVideoGaryF .pGaryF {
+        display: inline-block;
+        padding-top: 0px;
+        padding-left: 36px;
+        padding-right: 20px;
+        font-size: 1.2vw;
+        font-family: "Segoe UI";
+        color: white;
+        width: 50%;
+        align-self: center; }
   .divMayor .gifAd {
-    width: 30%;
-    margin-right: 10px; }
+    width: 80%;
+    margin-right: 10px;
+    height: inherit; }
 
 /* Activismos */
 #carousel {
@@ -339,27 +337,85 @@ footer {
   margin-top: 1rem; }
 
 /* Responsive */
-@media (max-width: 736px) {
-  .header__div {
-    width: 100%; }
+@media (max-width: 768px) {
+  .header__ul {
+    display: block !important;
+    text-align: end;
+    line-height: 6vw;
+    padding-top: 0 !important;
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important; }
   .header__div--ulContacto {
-    padding-left: 7rem; }
+    width: 100%; }
   .header__ul--contacto {
     display: block;
     padding-top: 0em; }
   .header__li--contacto {
-    font-size: 18px;
     margin-top: 10px; }
+  .header__li--activismos {
+    margin-top: 0 !important; }
+  .header__li--contacto {
+    margin-top: 0 !important; }
+  .videoVeganismo {
+    margin-top: 8vw;
+    margin-bottom: 12vw; }
+  .videoHome {
+    width: 90%;
+    height: auto; }
+  .inicio__tabla {
+    font-size: 3vw; }
+  .conferenciasVideoGaryY {
+    width: 90%;
+    height: 260px; }
+  .divGaryY {
+    width: 90%;
+    margin: auto; }
+  .GaryY {
+    font-size: 3vw !important; }
+  .divVideoEd {
+    display: block !important;
+    width: 120%; }
+  .videoEd {
+    width: 70% !important;
+    height: 34vw !important; }
+  .pEd {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 70% !important;
+    margin: auto !important;
+    font-size: 2.5vw !important;
+    text-align: center; }
+  .divVideoGaryF {
+    display: block !important;
+    width: 120%; }
+  .VideoGaryF {
+    width: 70% !important;
+    height: 34vw !important; }
+  .pGaryF {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 70% !important;
+    margin: auto !important;
+    font-size: 2.5vw !important;
+    text-align: center; }
+  .gifAd {
+    width: 370% !important; }
+  .grid-container {
+    width: 95% !important;
+    margin: auto !important; }
+  .grid-item {
+    padding: 2px !important;
+    font-size: 9.5px !important; }
   .body__titulo--contacto {
     font-size: 18px;
     width: 100%; }
   .formulario {
     width: 100%;
     padding: auto; }
-  label {
-    width: 70%; }
+  .contenedorInputContacto {
+    display: inline-grid; }
   select {
-    width: 40%; }
+    width: 100%; }
   option {
     font-size: 14px; }
   textarea {
